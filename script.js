@@ -36,7 +36,11 @@ for (let i = 2; i <= 10; i++) {
     prev = newNode;
 }
 
+let A = [];
+
 while (head) {
-    console.log(head.val);
+    A.push(head.val);
     head = head.next;
 }
+
+console.log(...A);
