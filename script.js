@@ -19,3 +19,11 @@
     7. Object & symbol
     8. typeof
 */
+
+class Node {
+    constructor(val) {
+        this.val = val;
+        this.next = null;
+    }
+};
+
