@@ -27,4 +27,16 @@ class Node {
     }
 };
 
-asdgffsdegdf
+let head = new Node(1);
+let prev = head;
+
+for (let i = 2; i <= 10; i++) {
+    let newNode = new Node(i);
+    prev.next = newNode;
+    prev = newNode;
+}
+
+while (head) {
+    console.log(head.val);
+    head = head.next;
+}
